@@ -1,4 +1,4 @@
-import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import './sidebar.css'
 

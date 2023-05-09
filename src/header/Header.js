@@ -2,7 +2,7 @@ import './header.css'
 import Sidebar from './headercomponents/Sidebar'
 import Logo from './headercomponents/Logo'
 import Hireme from './headercomponents/Hireme'
-import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Header =() =>{
  return(
