@@ -1,0 +1,18 @@
+
+
+#sbbtn{
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    border-color: transparent;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#sbbtn:hover{
+    background-color: #f1f1f1;
+}
