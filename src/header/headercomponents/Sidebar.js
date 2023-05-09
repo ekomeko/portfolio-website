@@ -1,22 +1,36 @@
 
 import { AiOutlineMenu } from 'react-icons/ai';
 import './sidebar.css'
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 
 function Sidebar() {
-   return( 
-    <>
-<button id='sbbtn' class="btn " type="button" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><AiOutlineMenu /></button>
+  const [show, setShow] = useState(false);
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>lorem lorem lorem</p>
-  </div>
-</div>
-   </>
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
+
+   return( 
+        <>
+      <Button variant='outline-dark' onClick={handleShow}>
+      <AiOutlineMenu/>
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+
    );
  
 }

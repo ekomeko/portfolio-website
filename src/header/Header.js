@@ -9,12 +9,14 @@ const Header =() =>{
  <>
  <div className='header'>
     <div className='header__left'>
-        <Sidebar/>
+        <div className='btn'><Sidebar/></div>
+        
         <Logo/>
         
     </div>
     <div className='header__right'>
-    <Hireme />
+        <div className='btn'><Hireme/></div>
+    
     </div>
  </div>
  </>
