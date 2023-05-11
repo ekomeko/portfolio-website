@@ -4,14 +4,18 @@ import './one.css';
 
 function One() {
     return (
-        <div className="one">
+        <>
+        <div className="layer spacer">
             <Marquee>
                 <div className="marquee">
-                <h1 className="header">EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN EKIN</h1>
+                <h1 className="ekin">HELLO I AM EKIN AND I AM BUILDING COOL WEBSITES RIGHT NOW</h1>
                 </div>
             </Marquee>
         </div>
-
+        
+            
+        
+        </>
     );
 
 }
