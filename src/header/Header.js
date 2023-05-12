@@ -1,10 +1,20 @@
 import './header.css'
 import Sidebar from './headercomponents/Sidebar'
 import Logo from './headercomponents/Logo'
-import Hireme from './headercomponents/Hireme'
+import MyModal from './form/modal'
+import { useState } from 'react';
 
 
 const Header =() =>{
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = () => {
+      setModalIsOpen(true);
+    };
+  
+    const closeModal = () => {
+      setModalIsOpen(false);
+    };
  return(
  <>
  <div className='header'>
@@ -15,7 +25,10 @@ const Header =() =>{
         
     </div>
     <div className='header__right'>
-        <Hireme/>
+    <div>
+      <button onClick={openModal}>Modal Aç</button>
+      <MyModal isOpen={modalIsOpen} closeModal={closeModal} />
+    </div>
     
     </div>
  </div>
