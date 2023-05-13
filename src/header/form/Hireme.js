@@ -1,5 +1,6 @@
 import Discord from "./Discord";
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 function Hireme() {
     const [formData,setFormData] = useState({
@@ -21,8 +22,9 @@ function Hireme() {
    };
 
     return (
-        <div className="card">
-            <form onSubmit={(e) => {
+        
+        <div style={hiremeContainer} className="card">
+            <form  onSubmit={(e) => {
                 e.preventDefault();
                 postToDiscord();
             }}>
@@ -67,13 +69,23 @@ function Hireme() {
                 }}
                 ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Send</button>
+            <Button type="submit" variant="outline-dark">Send</Button>
             </form>
         </div>
         
     );
     
 }
+
+const hiremeContainer = {
+    // Adjust the styling as per your requirements
+    padding: '20px',
+    backgroundColor: '#f0f0f0',
+    borderRadius: '5px',
+    marginBottom: '30px',
+    marginTop: '30px',
+  };
+  
 
 
 export default Hireme;
