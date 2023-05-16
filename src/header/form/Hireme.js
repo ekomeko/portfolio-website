@@ -41,7 +41,8 @@ function Hireme() {
                     }));
                 }} />
             </div>
-            <div>
+        
+            <div style={margin}>
                 <label className="form-label" htmlFor="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" className="form-control" onChange={(e) =>{
                     const email = e.target.value;
@@ -54,7 +55,8 @@ function Hireme() {
                     }));
                 }} />
             </div>
-            <div>
+            
+            <div style={margin}>
                 <label className="form-label" htmlFor="message">Message:</label>
                 <textarea cols="40" rows="5" id="message" name="message" placeholder="Enter Your Message" 
                 className="form-control" onChange={(e) => {
@@ -69,7 +71,7 @@ function Hireme() {
                 }}
                 ></textarea>
             </div>
-            <Button type="submit" variant="outline-dark">Send</Button>
+            <Button type="submit" style={button} variant="outline-dark">Send</Button>
             </form>
         </div>
         
@@ -80,11 +82,19 @@ function Hireme() {
 const hiremeContainer = {
     // Adjust the styling as per your requirements
     padding: '20px',
-    backgroundColor: '#f0f0f0',
+    border : '0px',
     borderRadius: '5px',
     marginBottom: '30px',
     marginTop: '30px',
   };
+
+const margin = {
+      marginTop: '15px',
+};
+
+const button = {
+    marginTop: '30px',
+};
   
 
 
