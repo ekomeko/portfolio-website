@@ -27,7 +27,7 @@ const Header =() =>{
     </div>
     <div className='header__right'>
     <div>
-      <Button  variant='outline-dark' onClick={openModal}>Modal Aç</Button>
+      <Button  variant='outline-dark' onClick={openModal}>Hire Me</Button>
       <MyModal isOpen={modalIsOpen} closeModal={closeModal} />
     </div>
     

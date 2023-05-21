@@ -22,11 +22,15 @@ function Sidebar() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>EKIN</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <h5>WhoAmI</h5>
+        <p>I am 19 years old Computer Engineering student.It's my first year in university</p>
+        <p>I love explore new technologys and create new things</p>
+        <p>I made this portfolio website with using React Bootstrap Javascript Html CSS And some react packages</p>
+        <p>My contacts:</p>
+        <a></a>
         </Offcanvas.Body>
       </Offcanvas>
     </>
