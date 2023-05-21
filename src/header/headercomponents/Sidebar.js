@@ -1,5 +1,8 @@
 
 import { AiOutlineMenu } from 'react-icons/ai';
+import { BsLinkedin, BsDiscord } from 'react-icons/bs';
+import { GoPrimitiveDot } from 'react-icons/go';
+import { SiGmail } from 'react-icons/si';
 import './sidebar.css'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -30,7 +33,11 @@ function Sidebar() {
         <p>I love explore new technologys and create new things</p>
         <p>I made this portfolio website with using React Bootstrap Javascript Html CSS And some react packages</p>
         <p>My contacts:</p>
-        <a></a>
+        <div className='contactbox'>
+        <p><a  href='https://www.linkedin.com/in/ekin-efe-kizilo%C4%9Flu-933657202/' target='_blank'><BsLinkedin/></a>: Ekin Efe KIZILOĞLU</p>
+        <p><BsDiscord/>: ekn#0418</p>
+        <p><SiGmail/>: ekinefek@gmail.com</p>
+        </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>
