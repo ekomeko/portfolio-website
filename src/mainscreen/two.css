@@ -1,4 +1,58 @@
 .two{
     background-color: #000;
     height: 100vh;
+
+}
+
+
+.tech{
+    margin-left: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.headertwo {
+  
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 72px;
+    background: linear-gradient(
+        to right,
+        #000 20%,
+        #ffffff 30%,
+        #667176 70%,
+        #9a8bbb 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.tech__icons > * {
+    margin-left: 30px;
+    height: 60px;
+}
+
+
+.tech__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
